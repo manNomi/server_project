@@ -1,4 +1,4 @@
-export const makeHeaderIcon = (src) => {
+const makeHeaderIcon = (src) => {
   const newContainer = makeTag({
     tagName: "div",
     tagClass: "header_icon_container",

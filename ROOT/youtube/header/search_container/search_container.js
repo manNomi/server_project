@@ -1,8 +1,4 @@
-import { makeHeaderIcon } from "../header_icon/header_icon.js";
-import { inputFocus, inputBlur } from "./focusEvent/focus_event.js";
-import { searchBarResizeEvent } from "../../component/resizeEvent/resizeEvent.js";
-
-export const makeSearchContainer = (imgOBJ) => {
+const makeSearchContainer = (imgOBJ) => {
   const { mic, search } = imgOBJ;
 
   // 검색 컨테이너

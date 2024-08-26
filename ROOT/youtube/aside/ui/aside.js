@@ -1,5 +1,3 @@
-import { makeAsideIcon } from "../aside_icon/aside_icon.js";
-import { asideResizeEvent } from "../../component/resizeEvent/resizeEvent.js";
 const iconData = [
   {
     content: "홈",
@@ -24,7 +22,7 @@ const iconData = [
   },
 ];
 
-export const makeAside = () => {
+const makeAside = () => {
   const aside = makeTag({ tagName: "aside", tagClass: "aside" });
   iconData.forEach((icon) => {
     aside.appendChild(makeAsideIcon({ ...icon }));

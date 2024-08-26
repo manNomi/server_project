@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- 리액트 사용 위한 임포트 -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- babel 임포트 -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
     <!-- root css -->
     <link rel="stylesheet" type="text/css" href="./index.css" />
     <link rel="stylesheet" type="text/css" href="./component/base.css" />
@@ -57,7 +67,43 @@
   </head>
   <body>
     <div id="root"></div>
+
+    <!-- 메인 -->
+    <script type="text/babel" src="./main/video.js"></script>
+    <script type="text/babel" src="./main/ui/main.js"></script>
+
+    <!-- 해더 -->
+    <script
+      type="text/babel"
+      src="./header/header_icon/header_icon.js"></script>
+    <script
+      type="text/babel"
+      src="./header/header_icon_list/header_icon_list.js"></script>
+    <script
+      type="text/babel"
+      src="./header/header_logo/header_logo.js"></script>
+    <script
+      type="text/babel"
+      src="./header/search_container/search_container.js"></script>
+    <script
+      type="text/babel"
+      src="./header/search_container/focusEvent/focus_event.js"></script>
+    <script type="text/babel" src="./header/ui/header.js"></script>
+
+    <!-- 어사이드  -->
+    <script type="text/babel" src="./aside/aside_icon/aside_icon.js"></script>
+    <script type="text/babel" src="./aside/ui/aside.js"></script>
+
+    <!-- 컴포넌트 -->
+    <script
+      type="text/babel"
+      src="./component/darkmodeEvent/darkMode.js"></script>
+    <script type="text/babel" src="./component/slider/slider.js"></script>
+    <script
+      type="text/babel"
+      src="./component/resizeEvent/resizeEvent.js"></script>
+
+    <!-- 앱  -->
+    <script type="text/babel" src="./app.js"></script>
   </body>
-  <script src="./component/make_tag.js"></script>
-  <script type="module" src="./index.js"></script>
 </html>

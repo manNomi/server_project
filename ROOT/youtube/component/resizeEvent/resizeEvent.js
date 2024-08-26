@@ -1,12 +1,12 @@
 const resizeValue = 790;
-export const asideResizeEvent = (aside) => {
+const asideResizeEvent = (aside) => {
   if (window.innerWidth > resizeValue) {
     aside.style.display = "flex";
   } else {
     aside.style.display = "none";
   }
 };
-export const mainResizeEvent = (main) => {
+const mainResizeEvent = (main) => {
   if (window.innerWidth > resizeValue) {
     main.classList.remove("none");
   } else {
@@ -15,7 +15,7 @@ export const mainResizeEvent = (main) => {
 };
 
 const resizeSearchValue = 500;
-export const searchBarResizeEvent = (search) => {
+const searchBarResizeEvent = (search) => {
   if (window.innerWidth > resizeSearchValue) {
     search.style.display = "flex";
   } else {

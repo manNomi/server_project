@@ -1,14 +1,12 @@
-import { makeVideo } from "../video.js";
-import { mainResizeEvent } from "../../component/resizeEvent/resizeEvent.js";
-export const makeMain = () => {
+const Main = () => {
   const videoList = getData();
-  const mainGroup = makeTag({ tagName: "main", tagClass: "main" });
-  videoList.forEach((videoData) => {
-    mainGroup.appendChild(makeVideo({ ...videoData }));
-  });
-  mainResizeEvent(mainGroup);
-  window.addEventListener("resize", () => mainResizeEvent(mainGroup));
-  return mainGroup;
+  return (
+    <main className="main">
+      {videoList.map((videoData) => (
+        <Video {...videoData} />
+      ))}
+    </main>
+  );
 };
 
 const getData = () => {

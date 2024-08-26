@@ -1,4 +1,4 @@
-export const setDark = (event) => {
+const setDark = (event) => {
   if (event.target.checked == true) {
     document.querySelectorAll("*").forEach((ele) => {
       ele.classList.add("dark");

@@ -1,6 +1,4 @@
-import { setDark } from "./darkmodeEvent/darkMode.js";
-
-export const makeSlider = () => {
+const makeSlider = () => {
   const slider = makeTag({ tagName: "input" });
   slider.role = "switch";
   slider.type = "checkbox";

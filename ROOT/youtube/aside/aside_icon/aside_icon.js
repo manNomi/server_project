@@ -1,4 +1,4 @@
-export const makeAsideIcon = (data) => {
+const makeAsideIcon = (data) => {
   const iconBox = makeTag({
     tagName: "button",
     tagClass: "aside_icon",
