@@ -10,3 +10,9 @@
   text-align: center;
   top: 0;
 }
+/* For screens wider than 790px */
+@media (min-width: 790px) {
+  aside {
+    display: flex;
+  }
+}

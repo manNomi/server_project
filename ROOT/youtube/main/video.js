@@ -2,23 +2,21 @@ const Video = (VideoData) => {
   const { title, thumbImg, userImg, userName, thumbView, thumbDate } =
     VideoData;
   return (
-    <>
-      <article className="video_group">
-        <img className="video_img" src={thumbImg} alt="Video Thumbnail" />
-        <div className="video_title">
-          <img className="video_user_img" src={userImg} alt="User Image" />
-          <div>
-            <p className="video_text">{title}</p>
-            <p className="video_text_name">{userName}</p>
-            <div className="video_text_small_box">
-              <p className="video_text_small">{setView(thumbView)}</p>
-              <p className="video_text_small">•</p>
-              <p className="video_text_small">{setDate(thumbDate)}</p>
-            </div>
+    <article className="video_group">
+      <img className="video_img" src={thumbImg} alt="Video Thumbnail" />
+      <div className="video_title">
+        <img className="video_user_img" src={userImg} alt="User Image" />
+        <div>
+          <p className="video_text">{title}</p>
+          <p className="video_text_name">{userName}</p>
+          <div className="video_text_small_box">
+            <p className="video_text_small">{setView(thumbView)}</p>
+            <p className="video_text_small">•</p>
+            <p className="video_text_small">{setDate(thumbDate)}</p>
           </div>
         </div>
-      </article>
-    </>
+      </div>
+    </article>
   );
 };
 

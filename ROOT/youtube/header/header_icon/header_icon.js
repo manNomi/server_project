@@ -1,16 +1,12 @@
-const makeHeaderIcon = (src) => {
-  const newContainer = makeTag({
-    tagName: "div",
-    tagClass: "header_icon_container",
-  });
-  const newBox = makeTag({
-    tagName: "div",
-    tagClass: "header_icon_box",
-  });
-  const newIcon = makeTag({ tagName: "div", tagClass: "header_icon" });
-  newIcon.classList.add("svg");
-  newIcon.style.backgroundImage = `url(${src})`;
-  newBox.appendChild(newIcon);
-  newContainer.appendChild(newBox);
-  return newContainer;
+const HeaderIcon = ({ resource }) => {
+  return (
+    <div className="header_icon_container">
+      <div className="header_icon_box">
+        <div
+          className="header_icon svg"
+          style={{ backgroundImage: `url(${resource})` }}
+        />
+      </div>
+    </div>
+  );
 };

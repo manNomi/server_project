@@ -11,3 +11,8 @@
 .none {
   margin-left: 0;
 }
+@media (min-width: 790px) {
+  main {
+    display: block; /* Show main content */
+  }
+}

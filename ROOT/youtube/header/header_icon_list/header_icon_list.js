@@ -1,8 +1,10 @@
-const makeIconList = (imgObj) => {
-  const { camera, alert } = imgObj;
-  const iconList = makeTag({ tagName: "div", tagClass: "header_icon_list" });
-  iconList.appendChild(makeHeaderIcon(camera.resource));
-  iconList.appendChild(makeHeaderIcon(alert.resource));
-  iconList.appendChild(makeSlider());
-  return iconList;
+const HeaderIconList = ({ iconObj }) => {
+  const { camera, alert } = iconObj;
+  return (
+    <nav className="header_icon_list">
+      <HeaderIcon resource={camera.resource} />
+      <HeaderIcon resource={alert.resource} />
+      <Slider />
+    </nav>
+  );
 };

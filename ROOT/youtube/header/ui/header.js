@@ -1,4 +1,4 @@
-const iconData = {
+const headerIconData = {
   setting: {
     resource: "./image/header/setting.svg",
   },
@@ -15,13 +15,12 @@ const iconData = {
   logo: { resource: "./image/header/logo.svg" },
 };
 
-const makeHeader = () => {
-  const header = makeTag({ tagName: "header", tagClass: "header" });
-  header.classList.add("white");
-
-  header.appendChild(makeHeaderLogoBox({ ...iconData }));
-  header.appendChild(makeSearchContainer({ ...iconData }));
-  header.appendChild(makeIconList({ ...iconData }));
-
-  return header;
+const Header = () => {
+  return (
+    <header className="header white">
+      <HeaderLogoBox iconObj={headerIconData} />
+      <SearchContainer iconObj={headerIconData} />
+      <HeaderIconList iconObj={headerIconData} />
+    </header>
+  );
 };
