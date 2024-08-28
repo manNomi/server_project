@@ -3,7 +3,7 @@
   color: var(--color-white) !important;
 }
 .white {
-  background-color: var(--color-white);
+  background-color: var(--color-x);
   color: var(--color-black);
 }
 .dark_svg {

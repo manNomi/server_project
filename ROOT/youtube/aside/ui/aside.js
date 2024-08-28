@@ -8,7 +8,7 @@ const iconData = [
     resource: "./image/aside/shorts.svg",
   },
   {
-    content: "구독123123",
+    content: "구독",
     resource: "./image/aside/subscribe.svg",
   },
   {
@@ -22,11 +22,25 @@ const iconData = [
   },
 ];
 
-const Aside = () => {
+const Aside = (props) => {
+  const getFunc = (content) => {
+    switch (content) {
+      case "숏츠":
+        return props.onShortsClick;
+      case "홈":
+        return props.onMainClick;
+      default:
+        return undefined;
+    }
+  };
   return (
     <aside className="aside">
       {iconData.map((icon) => (
-        <AsideIcon content={icon.content} resource={icon.resource} />
+        <AsideIcon
+          content={icon.content}
+          resource={icon.resource}
+          onClick={getFunc(icon.content)}
+        />
       ))}
     </aside>
   );

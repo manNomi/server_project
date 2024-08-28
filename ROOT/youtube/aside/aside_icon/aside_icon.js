@@ -1,7 +1,7 @@
 const AsideIcon = (props) => {
-  const { content, resource } = props;
+  const { content, resource, onClick } = props;
   return (
-    <button className="aside_icon">
+    <button className="aside_icon" onClick={onClick}>
       <div
         className="svg"
         style={{ backgroundImage: `url(${resource})` }}></div>

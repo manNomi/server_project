@@ -11,6 +11,7 @@ const setDark = (event) => {
     document.querySelectorAll("p").forEach((ele) => {
       ele.classList.remove("dark");
     });
+    document.querySelector(".header").style.backgroundColor = "black";
   } else {
     document.querySelectorAll("*").forEach((ele) => {
       ele.classList.add("white");
@@ -23,5 +24,6 @@ const setDark = (event) => {
     document.querySelectorAll("p").forEach((ele) => {
       ele.classList.remove("white");
     });
+    document.querySelector(".header").style.backgroundColor = "white";
   }
 };

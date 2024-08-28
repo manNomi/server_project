@@ -1,8 +1,10 @@
 .header {
   top: 0;
   width: 100%;
-  position: fixed;
+  position: sticky;
   height: var(--header-size);
   display: flex;
   justify-content: space-between;
+  z-index: 1000;
+  background-color: white;
 }

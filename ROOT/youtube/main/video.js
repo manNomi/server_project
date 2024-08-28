@@ -1,6 +1,5 @@
-const Video = (VideoData) => {
-  const { title, thumbImg, userImg, userName, thumbView, thumbDate } =
-    VideoData;
+const Video = (props) => {
+  const { title, thumbImg, userImg, userName, thumbView, thumbDate } = props;
   return (
     <article className="video_group">
       <img className="video_img" src={thumbImg} alt="Video Thumbnail" />

@@ -15,10 +15,10 @@ const headerIconData = {
   logo: { resource: "./image/header/logo.svg" },
 };
 
-const Header = () => {
+const Header = ({ onMainClick }) => {
   return (
     <header className="header white">
-      <HeaderLogoBox iconObj={headerIconData} />
+      <HeaderLogoBox iconObj={headerIconData} onClick={onMainClick} />
       <SearchContainer iconObj={headerIconData} />
       <HeaderIconList iconObj={headerIconData} />
     </header>
