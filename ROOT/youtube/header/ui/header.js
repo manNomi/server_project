@@ -18,7 +18,7 @@ const headerIconData = {
 const Header = ({ onMainClick }) => {
   return (
     <header className="header white">
-      <HeaderLogoBox iconObj={headerIconData} onClick={onMainClick} />
+      <HeaderLogoBox iconObj={headerIconData} clickEvent={onMainClick} />
       <SearchContainer iconObj={headerIconData} />
       <HeaderIconList iconObj={headerIconData} />
     </header>
