@@ -6,13 +6,13 @@
   margin-top: var(--header-size);
   justify-content: center;
   align-items: center;
-  margin-left: var(--aside-size);
+  margin-left: 0;
 }
 .none {
   margin-left: 0;
 }
 @media (min-width: 790px) {
-  main {
-    display: block; /* Show main content */
+  .main {
+    margin-left: var(--aside-size);
   }
 }

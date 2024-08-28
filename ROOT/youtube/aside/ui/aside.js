@@ -22,12 +22,12 @@ const iconData = [
   },
 ];
 
-const makeAside = () => {
-  const aside = makeTag({ tagName: "aside", tagClass: "aside" });
-  iconData.forEach((icon) => {
-    aside.appendChild(makeAsideIcon({ ...icon }));
-  });
-  asideResizeEvent(aside);
-  window.addEventListener("resize", () => asideResizeEvent(aside));
-  return aside;
+const Aside = () => {
+  return (
+    <aside className="aside">
+      {iconData.map((icon) => (
+        <AsideIcon content={icon.content} resource={icon.resource} />
+      ))}
+    </aside>
+  );
 };
