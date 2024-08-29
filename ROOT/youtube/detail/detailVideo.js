@@ -79,6 +79,7 @@ const detailVideo = (props) => {
             <p className="detail_comment_array_text">정렬 기준</p>
           </div>
         </div>
+
         <div className="detail_comment_wirte">
           <img className="detail_user_img" src={userImg} />
           <input

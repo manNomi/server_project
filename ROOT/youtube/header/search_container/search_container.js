@@ -5,15 +5,9 @@ const SearchContainer = ({ iconObj }) => {
       {/* 검색 박스 */}
       <div className="search_outline">
         <div className="search_box">
-          <input
-            className="search_input"
-            placeholder="검색"
-            onFocus={inputFocus}
-            onBlur={inputBlur}
-          />
+          <input className="search_input" placeholder="검색" />
         </div>
         <div
-          id="search_inner_logo"
           className="search_hidden svg"
           style={{ backgroundImage: `url(${search.resource})` }}
         />

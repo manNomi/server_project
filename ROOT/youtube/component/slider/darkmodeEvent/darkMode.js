@@ -11,6 +11,10 @@ const setDark = (event) => {
     document.querySelectorAll("p").forEach((ele) => {
       ele.classList.remove("dark");
     });
+    document.querySelectorAll("img").forEach((ele) => {
+      ele.classList.remove("dark");
+    });
+
     document.querySelector(".header").style.backgroundColor = "black";
   } else {
     document.querySelectorAll("*").forEach((ele) => {
@@ -22,6 +26,9 @@ const setDark = (event) => {
       ele.classList.remove("white");
     });
     document.querySelectorAll("p").forEach((ele) => {
+      ele.classList.remove("white");
+    });
+    document.querySelectorAll("img").forEach((ele) => {
       ele.classList.remove("white");
     });
     document.querySelector(".header").style.backgroundColor = "white";

@@ -26,10 +26,6 @@ const DetailVideo = (props) => {
     <article className="detail_group">
       <div className="detail_video">
         <img className="detail_img" src={thumbImg} />
-        {/* <div className="detail_video_icon_list">
-          <img className="detail_video_icon" src={playSrc}></img>
-          <img className="detail_video_icon" src={soundSrc}></img>
-        </div> */}
         <div className="detail_title">
           <div className="detail_title_text">{title}</div>
           <div className="detail_user_title">
@@ -42,16 +38,6 @@ const DetailVideo = (props) => {
                 )}명`}</p>
               </div>
             </div>
-            <button className="detail_icon_border">
-              <div
-                className="detail_icon"
-                style={{ backgroundImage: `url(${alertSrc})` }}></div>
-              <p className="detail_title_icon_text">구독중</p>
-              <div
-                className="detail_icon "
-                style={{ backgroundImage: `url(${arrowSrc})` }}></div>
-            </button>
-
             <button className="detail_icon_border">
               <img className="detail_icon" src={alertSrc} alt="Alert Icon" />
               <p className="detail_title_icon_text">구독중</p>
