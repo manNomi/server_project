@@ -18,7 +18,9 @@ const App = () => {
   return (
     <>
       <Header onMainClick={mainClick} />
-      <Aside onShortsClick={shortsClick} onMainClick={mainClick} />
+      {state != "Detail" && (
+        <Aside onShortsClick={shortsClick} onMainClick={mainClick} />
+      )}
       {state == "Main" && <Main onDetailClick={detailClick} />}
       {state == "Shorts" && <Shorts />}
       {state == "Detail" && <Detail />}
