@@ -1,13 +1,39 @@
 const Shorts = () => {
-  const shortsList = getShortsData();
-  const commentDataList = getShortsCommentData();
+  const [commentDataList, setCommentDataList] = React.useState([]);
+  const [shortsList, setShortsList] = React.useState([]);
+  const [loading, setLoading] = React.useState(true);
+  const [error, setError] = React.useState(false);
+  React.useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const shortData = getShortsData();
+        setShortsList(shortData);
+
+        const commentData = getShortsCommentData();
+        setCommentDataList(commentData);
+
+        setLoading(false);
+      } catch (error) {
+        setError(true);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  if (loading) {
+    return <div>로딩중</div>;
+  }
+  if (error) {
+    return <div>오류 입니다</div>;
+  }
   return (
     <main className="shorts_frame">
       {shortsList.map((shortsData) => (
         <ShortsVideo
           shortsData={shortsData}
-          IconData={IconData}
-          Comment={commentDataList}
+          iconData={IconData}
+          comment={commentDataList}
         />
       ))}
     </main>

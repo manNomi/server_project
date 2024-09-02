@@ -19,3 +19,7 @@
   height: 40px;
   border-radius: 50%;
 }
+
+.dark_input {
+  color: white !important;
+}

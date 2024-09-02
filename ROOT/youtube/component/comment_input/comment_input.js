@@ -5,7 +5,8 @@ const CommentInput = (props) => {
       <input
         type="text"
         placeholder="댓글 추가 ..."
-        className="comment_write_input"></input>
+        className={`comment_write_input ${props.colorDark && "dark_input"}`}
+      />
     </div>
   );
 };

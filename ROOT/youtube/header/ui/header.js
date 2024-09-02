@@ -15,10 +15,19 @@ const headerIconData = {
   logo: { resource: "./image/header/logo.svg" },
 };
 
-const Header = ({ onMainClick }) => {
+const Header = () => {
   return (
     <header className="header white">
-      <HeaderLogoBox iconObj={headerIconData} clickEvent={onMainClick} />
+      <div className="header_logo_box">
+        <HoverIcon resource={headerIconData.setting.resource} />
+        <div
+          className="header_logo_img"
+          style={{ backgroundImage: `url(${headerIconData.logo.resource})` }}
+          onClick={() => {
+            location.reload();
+          }}
+        />
+      </div>
       <SearchContainer iconObj={headerIconData} />
       <HeaderIconList iconObj={headerIconData} />
     </header>

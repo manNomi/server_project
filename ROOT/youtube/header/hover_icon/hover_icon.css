@@ -1,9 +1,9 @@
-.header_icon {
+.hover_Icon {
   width: 24px;
   height: 24px;
 }
 
-.header_icon_container {
+.hover_Icon_container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,7 +11,7 @@
   height: 100%;
 }
 
-.header_icon_box {
+.hover_Icon_box {
   display: flex;
   justify-content: center;
   align-items: center;

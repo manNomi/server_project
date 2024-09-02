@@ -22,7 +22,7 @@ const SearchContainer = ({ iconObj }) => {
       </button>
 
       {/* 마이크 아이콘 */}
-      <HeaderIcon resource={mic.resource} />
+      <HoverIcon resource={mic.resource} />
     </div>
   );
 };

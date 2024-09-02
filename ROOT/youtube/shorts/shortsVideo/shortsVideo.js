@@ -11,9 +11,9 @@ const ShortsVideo = (props) => {
     soundSrc,
     soundnoneSrc,
     arraySrc,
-  } = props.IconData;
+  } = props.iconData;
 
-  const commentList = props.Comment;
+  const commentList = props.comment;
   console.log(commentList);
 
   return (
@@ -85,7 +85,7 @@ const ShortsVideo = (props) => {
           </div>
 
           <div className="shorts_input_box">
-            <CommentInput userImg={userImg} />
+            <CommentInput userImg={userImg} colorDark={true} />
           </div>
         </article>
       </div>
